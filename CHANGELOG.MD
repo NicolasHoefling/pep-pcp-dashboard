@@ -1,21 +1,24 @@
-# P&P PCP Dashboard
+# Changelog
 
 ## v0.3
 
-- Estrutura do Dashboard criada
-- Bootstrap integrado
-- Header criado
-- Cards criados
+- Configuração inicial do Frontend
+- Bootstrap
+- Font Awesome
+- Estrutura HTML
+- Estrutura CSS
+- Estrutura JavaScript
 
 ---
 
 ## v0.2
 
-- Estrutura do projeto criada
+- Estrutura do projeto
+- GitHub
+- Organização das pastas
 
 ---
 
 ## v0.1
 
-- Planejamento
-- Wireframe
+- Planejamento do projeto
