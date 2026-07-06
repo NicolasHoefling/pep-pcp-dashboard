@@ -1,25 +1,49 @@
 :root{
 
-    --primary:#003B73;
+    /* Cores principais P&P */
 
-    --secondary:#0056A6;
+    --primary:#263D7D;
 
-    --success:#00C853;
+    --secondary:#348A9D;
 
-    --warning:#FFC107;
+    --primary-gradient:linear-gradient(90deg,#263D7D,#348A9D);
 
-    --danger:#F44336;
+    /* Status */
+
+    --success:#2ECC71;
+
+    --warning:#F1C40F;
+
+    --danger:#E74C3C;
+
+    --info:#3498DB;
+
+    /* Interface */
 
     --background:#F5F7FA;
 
     --card:#FFFFFF;
 
-    --text:#2E2E2E;
+    --text:#2F3A4A;
+
+    --text-light:#6B7280;
 
     --border:#E5E7EB;
 
-    --shadow:0 8px 25px rgba(0,0,0,.08);
+    /* Layout */
+
+    --sidebar-width:260px;
+
+    --header-height:80px;
+
+    --footer-height:60px;
+
+    /* Efeitos */
 
     --radius:14px;
+
+    --shadow:0 8px 20px rgba(0,0,0,.08);
+
+    --transition:.25s ease;
 
 }

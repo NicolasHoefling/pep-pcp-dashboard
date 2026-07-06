@@ -1,24 +1,9 @@
 # Changelog
 
-## v0.3
-
-- Configuração inicial do Frontend
-- Bootstrap
-- Font Awesome
-- Estrutura HTML
-- Estrutura CSS
-- Estrutura JavaScript
-
----
-
-## v0.2
-
-- Estrutura do projeto
-- GitHub
-- Organização das pastas
-
----
-
-## v0.1
-
-- Planejamento do projeto
+## v0.4
+- Criação do Dashboard Shell
+- Sidebar funcional
+- Header com data dinâmica
+- Footer institucional
+- Bootstrap Icons integrados
+- Nova identidade visual baseada na P&P

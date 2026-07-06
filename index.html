@@ -1,53 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>P&P PCP Dashboard</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="icon" href="assets/img/favicon.ico" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS do Projeto -->
-    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
 
-    <link rel="stylesheet" href="assets/css/components.css">
+  <body>
+    <div class="app">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <img src="assets/img/logo.svg" alt="P&P" />
+        </div>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+        <ul class="sidebar-menu">
+          <li class="active">
+            <i class="bi bi-speedometer2"></i>
+            Dashboard
+          </li>
 
-    <link rel="stylesheet" href="assets/css/responsive.css">
+          <li>
+            <i class="bi bi-building-gear"></i>
+            Linha de Produção
+          </li>
 
-</head>
+          <li>
+            <i class="bi bi-buildings"></i>
+            Clientes
+          </li>
 
-<body>
+          <li>
+            <i class="bi bi-gear"></i>
+            Configurações
+          </li>
+        </ul>
+      </aside>
 
-    <h1>P&P PCP Dashboard</h1>
+      <!-- Conteúdo -->
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+      <main class="main-content">
+        <header class="header">
+          <div class="header-left">
+            <h2>P&P PCP Dashboard</h2>
 
-    <!-- JavaScript -->
+            <span id="currentDate"> 02 Julho 2026 </span>
+          </div>
+
+          <div class="header-right">
+            <button class="icon-btn">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+
+            <button class="icon-btn">
+              <i class="bi bi-bell"></i>
+            </button>
+
+            <button class="icon-btn">
+              <i class="bi bi-person-circle"></i>
+            </button>
+          </div>
+        </header>
+
+        <section class="content">
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <span class="kpi-title"> Próximo Lote </span>
+
+              <h2>239</h2>
+
+              <p>Julian Bowen</p>
+
+              <small>03/07/2026</small>
+            </div>
+
+            <div class="kpi-card">
+              <span class="kpi-title"> Produção </span>
+
+              <div class="kpi-info">
+                <p>Pedidos: <strong>10</strong></p>
+
+                <p>Produção: <strong>8</strong></p>
+
+                <p>Programar: <strong>1</strong></p>
+
+                <p>Embalando: <strong>1</strong></p>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <span class="kpi-title"> Produção do Mês </span>
+
+              <h2>3.458</h2>
+
+              <p>m³ produzidos</p>
+
+              <small>Julho 2026</small>
+            </div>
+          </div>
+          <div class="production-queue">
+            <div class="queue-header">
+              <h3>Fila de Produção</h3>
+
+              <span>10 pedidos em aberto</span>
+            </div>
+
+            <div class="production-card">
+              <div class="production-left">
+                <div class="lote">
+                  <h2>239</h2>
+
+                  <small>Lote</small>
+                </div>
+
+                <div>
+                  <h5>Julian Bowen</h5>
+
+                  <p>69,11 m³ • 438 caixas</p>
+
+                  <small>Carregamento: 03/07/2026</small>
+                </div>
+              </div>
+
+              <div class="production-center">
+                <span class="status production"> Em Produção </span>
+              </div>
+
+              <div class="production-right">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 72%"></div>
+                </div>
+
+                <small>72% embalado</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>Desenvolvido por Nicolas Hoefling © 2026</footer>
+      </main>
+    </div>
+
+    <script src="assets/js/mock-data.js"></script>
+    <script src="assets/js/render.js"></script>
     <script src="assets/js/app.js"></script>
-
-</body>
-
+  </body>
 </html>

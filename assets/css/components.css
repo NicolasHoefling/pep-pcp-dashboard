@@ -1,0 +1,199 @@
+/* ===========================
+   KPI GRID
+=========================== */
+
+.kpi-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.kpi-card{
+
+    background:var(--card);
+
+    border-radius:var(--radius);
+
+    padding:24px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    border-top:5px solid var(--primary);
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.kpi-title{
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+    text-transform:uppercase;
+
+    letter-spacing:.8px;
+
+}
+
+.kpi-card h2{
+
+    margin:18px 0 10px;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+.kpi-card p{
+
+    margin:4px 0;
+
+}
+
+.kpi-card small{
+
+    color:var(--text-light);
+
+}
+
+.kpi-info{
+
+    margin-top:18px;
+
+}
+
+.kpi-info strong{
+
+    color:var(--primary);
+
+}
+
+/*==========================
+PRODUCTION QUEUE
+==========================*/
+
+.queue{
+
+    margin-top:20px;
+
+}
+
+.queue-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.queue-header h3{
+
+    font-size:22px;
+
+}
+
+.production-card{
+
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:var(--shadow);
+    margin-bottom:18px;
+    transition:.25s;
+    border-left:8px solid var(--warning);
+
+}
+
+.production-card:hover{
+    transform:translateY(-3px);
+
+}
+
+.production-left{
+    display:flex;
+    gap:22px;
+    align-items:center;
+
+}
+
+.lote{
+
+    width:85px;
+    height:85px;
+    border-radius:16px;
+    background:var(--primary-gradient);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.lote h2{
+
+    margin:0;
+
+}
+
+.status{
+
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+.production{
+
+    background:#FFF5CC;
+    color:#9A6A00;
+
+}
+
+.production-right{
+
+    width:220px;
+
+}
+
+.progress{
+
+    height:12px;
+
+    border-radius:20px;
+
+    background:#E9ECEF;
+
+    overflow:hidden;
+
+}
+
+.progress-bar{
+
+    background:var(--success);
+
+}
