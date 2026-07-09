@@ -1,12 +1,12 @@
-function renderProductionLots(){
+function renderProductionLots(fila){
 
-    const productionQueue = document.querySelector(".production-queue");
+    const productionQueue=document.querySelector(".production-queue");
 
-    productionQueue.innerHTML = "";
+    let html="";
 
-    productionLots.forEach(item=>{
+    fila.forEach(item=>{
 
-        productionQueue.innerHTML += `
+        html+=`
 
         <div class="production-card">
 
@@ -14,9 +14,9 @@ function renderProductionLots(){
 
                 <div class="lote">
 
-                    <h2>${item.lote}</h2>
-
                     <small>Lote</small>
+
+                    <h2>${item.lote}</h2>
 
                 </div>
 
@@ -24,9 +24,11 @@ function renderProductionLots(){
 
                     <h5>${item.cliente}</h5>
 
-                    <p>${item.m3} m³ • ${item.caixas}/${item.caixasTotal} caixas</p>
+                    <small>${item.po}</small>
 
-                    <small>${item.carregamento}</small>
+                    <p>${item.metrosCubicos} m³ • ${item.caixasEmbaladas}/${item.qtdCaixas} caixas</p>
+
+                    <small>Carregamento: ${formatDate(item.dataCarregamento)}</small>
 
                 </div>
 
@@ -34,7 +36,9 @@ function renderProductionLots(){
 
             <div>
 
-                <span class="status production">
+                <span
+                    class="status"
+                    style="background:${item.statusColor};color:white;">
 
                     ${item.status}
 
@@ -63,5 +67,21 @@ function renderProductionLots(){
         `;
 
     });
+
+    productionQueue.innerHTML=html;
+
+}
+
+function formatDate(date){
+
+    if(!date) return "--";
+
+    return new Date(date).toLocaleDateString("pt-BR");
+
+}
+
+function renderKPIs(kpis){
+
+    console.log(kpis);
 
 }

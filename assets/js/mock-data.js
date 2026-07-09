@@ -1,3 +1,20 @@
+/**
+ * ===========================================================
+ * MOCK DATA
+ * ===========================================================
+ * Utilizado apenas durante o desenvolvimento inicial.
+ *
+ * O sistema atualmente consome exclusivamente:
+ *
+ * GET /dashboard
+ *
+ * Este arquivo permanece apenas como referência da estrutura
+ * utilizada durante a prototipação.
+ *
+ * Não utilizar em produção.
+ * ===========================================================
+ */
+
 const productionLots = [
 
     {
@@ -10,7 +27,9 @@ const productionLots = [
         caixas:438,
         caixasTotal:600,
         m3:69.11,
-        carregamento:"03/07/2026"
+        dataEmissao:"02/06/2026",
+        carregamentoPrevisto:"03/07/2026",
+        carregamentoReal:null
     },
 
     {
@@ -23,7 +42,9 @@ const productionLots = [
         caixas:90,
         caixasTotal:500,
         m3:54.80,
-        carregamento:"08/07/2026"
+        dataEmissao:"02/06/2026",
+        carregamentoPrevisto:"03/07/2026",
+        carregamentoReal:null
     },
 
     {
@@ -36,7 +57,9 @@ const productionLots = [
         caixas:515,
         caixasTotal:550,
         m3:81.32,
-        carregamento:"10/07/2026"
+        dataEmissao:"02/06/2026",
+        carregamentoPrevisto:"03/07/2026",
+        carregamentoReal:null
     },
 
     {
@@ -49,7 +72,9 @@ const productionLots = [
         caixas:515,
         caixasTotal:550,
         m3:71.32,
-        carregamento:"10/07/2026"
+        dataEmissao:"02/06/2026",
+        carregamentoPrevisto:"03/07/2026",
+        carregamentoReal:null
     }
 
 ];

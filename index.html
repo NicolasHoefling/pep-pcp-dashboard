@@ -131,51 +131,62 @@
               <small>Julho 2026</small>
             </div>
           </div>
-          <div class="production-queue">
-            <div class="queue-header">
-              <h3>Fila de Produção</h3>
 
-              <span>10 pedidos em aberto</span>
+          <section class="executive-summary">
+            <div class="summary-header">
+              <h2>Resumo Executivo</h2>
+
+              <small>Situação atual da produção</small>
             </div>
 
-            <div class="production-card">
-              <div class="production-left">
-                <div class="lote">
-                  <h2>239</h2>
-
-                  <small>Lote</small>
-                </div>
+            <div class="summary-content">
+              <div class="summary-item">
+                <i class="bi bi-box-seam"></i>
 
                 <div>
-                  <h5>Julian Bowen</h5>
+                  <strong>10 lotes ativos</strong>
 
-                  <p>69,11 m³ • 438 caixas</p>
-
-                  <small>Carregamento: 03/07/2026</small>
+                  <p>8 em produção</p>
                 </div>
               </div>
 
-              <div class="production-center">
-                <span class="status production"> Em Produção </span>
+              <div class="summary-item">
+                <i class="bi bi-truck"></i>
+
+                <div>
+                  <strong>Lote 239</strong>
+
+                  <p>Carrega em 03/07</p>
+                </div>
               </div>
 
-              <div class="production-right">
-                <div class="progress">
-                  <div class="progress-bar" style="width: 72%"></div>
-                </div>
+              <div class="summary-item">
+                <i class="bi bi-building"></i>
 
-                <small>72% embalado</small>
+                <div>
+                  <strong>693,24 m³</strong>
+
+                  <p>Volume em fabricação</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <footer>Desenvolvido por Nicolas Hoefling © 2026</footer>
-      </main>
-    </div>
+          <div class="queue-header">
 
-    <script src="assets/js/mock-data.js"></script>
-    <script src="assets/js/render.js"></script>
-    <script src="assets/js/app.js"></script>
+    <h3>Fila de Produção</h3>
+
+    <span id="totalLots"></span>
+
+</div>
+
+<div class="production-queue"></div>
+             
+
+<!-- <script src="assets/js/mock-data.js"></script> -->
+<script src="assets/js/api.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/dashboard.js"></script>
+<script src="assets/js/app.js"></script>
   </body>
 </html>

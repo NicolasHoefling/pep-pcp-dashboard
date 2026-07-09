@@ -8,4 +8,8 @@ data.toLocaleDateString("pt-BR",{
     year:"numeric"
 });
 
-renderProductionLots();
+document.addEventListener("DOMContentLoaded", () => {
+
+    loadDashboard();
+
+});
